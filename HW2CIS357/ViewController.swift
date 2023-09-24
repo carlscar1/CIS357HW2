@@ -19,9 +19,10 @@ class ViewController: UIViewController {
     var p1Long: String = ""
     var p2Long: String = ""
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
         p1LatInputField.text = p1Lat
         p2LatInputField.text = p2Lat
         p1LongInputField.text = p1Long
@@ -30,8 +31,23 @@ class ViewController: UIViewController {
 
 
     @IBAction func calculate(_ sender: UIButton) {
+        //Calulate distance:
+        var distance: Float = 0.0
+        var earthRadius: Float = 6371
         
-        //Insert math to calculate distance and bearing
+        var dLat = degreesToRadians(deg:(Float(p1Lat)! - Float(p2Lat)!))
+        var dLong = degreesToRadians(deg:(Float(p1Long)! - Float(p2Long)!))
+        var a = sin(dLat/2) * sin(dLat/2) + cos(degreesToRadians(deg:(Float(p1Lat))!)) * cos(degreesToRadians(deg: Float(p2Lat)!)) * sin(dLong/2) * sin(dLong/2)
+        var c = 2 * atan2(sqrt(a), sqrt(1-a))
+        distance = earthRadius * c
+        
+        //Calculate bearing:
+        var bearing: Float = 0.0
+        
+    }
+    
+    func degreesToRadians(deg: Float) -> Float{
+        return deg * Float.pi / 180
     }
     
     
