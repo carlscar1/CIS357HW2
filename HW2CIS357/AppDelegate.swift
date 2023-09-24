@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  HW2CIS357
 //
-//  Created by Caroline Carlson on 9/20/23.
+//  Caroline Carlson and Alexandra MacKay
 //
 
 import UIKit
