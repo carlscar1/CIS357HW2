@@ -43,11 +43,19 @@ class ViewController: UIViewController {
         
         //Calculate bearing:
         var bearing: Float = 0.0
+        var x = cos(degreesToRadians(deg: Float(p2Lat)!)) * sin(degreesToRadians(deg:dLong))
+        var y = cos(degreesToRadians(deg: Float(p1Lat)!)) * sin(degreesToRadians(deg: Float(p2Lat)!)) - sin(degreesToRadians(deg: Float(p1Lat)!)) * cos(degreesToRadians(deg: Float(p2Lat)!)) * cos(degreesToRadians(deg: dLong))
+        bearing = atan2(x,y)
+        bearing = radiansToDegrees(rad: bearing)
         
     }
     
     func degreesToRadians(deg: Float) -> Float{
         return deg * Float.pi / 180
+    }
+    
+    func radiansToDegrees(rad: Float) -> Float{
+        return rad * 180 / Float.pi
     }
     
     
