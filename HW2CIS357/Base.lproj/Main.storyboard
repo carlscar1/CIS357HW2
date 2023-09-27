@@ -72,7 +72,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Settings"/>
                                 <connections>
                                     <action selector="goToSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ob0-E2-imp"/>
-                                    <segue destination="oS6-fK-xHj" kind="presentation" modalPresentationStyle="fullScreen" id="tEH-Ab-KK5"/>
+                                    <segue destination="oS6-fK-xHj" kind="presentation" id="xX4-uu-t8b"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -90,22 +90,22 @@
             </objects>
             <point key="canvasLocation" x="-301.52671755725191" y="-195.77464788732397"/>
         </scene>
-        <!--View Controller-->
+        <!--SettingsViewController-->
         <scene sceneID="Jtf-dP-azA">
             <objects>
-                <viewController id="oS6-fK-xHj" sceneMemberID="viewController">
+                <viewController title="SettingsViewController" id="oS6-fK-xHj" customClass="SettingsViewController" customModule="HW2CIS357" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pha-tC-gvF">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RVf-Pn-cTR">
-                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <rect key="frame" x="0.0" y="27" width="393" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Settings" id="zcN-0U-LHR">
                                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="jvt-6H-iXs">
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="bOG-G5-iog"/>
+                                                <action selector="Cancel:" destination="oS6-fK-xHj" id="wSs-e9-Udd"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Save" id="0s9-vF-44d"/>
@@ -144,13 +144,34 @@
                         <viewLayoutGuide key="safeArea" id="Pld-Mf-5SN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jBW-6d-sHj"/>
+                    <navigationItem key="navigationItem" id="o9j-Ur-eyh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vtk-pu-Jpc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521.3740458015266" y="-188.02816901408451"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IaB-Gt-OwT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Z0-2R-9T0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vob-YW-tql">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oS6-fK-xHj" kind="relationship" relationship="rootViewController" id="5aL-yo-B03"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5D-Ad-ust" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="594.6564885496183" y="-188.02816901408451"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="xX4-uu-t8b"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="placeholderTextColor">
             <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>

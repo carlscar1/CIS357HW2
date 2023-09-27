@@ -16,6 +16,7 @@
 		3F93826E2ABB32CC00612F8D /* HW2CIS357Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F93826D2ABB32CC00612F8D /* HW2CIS357Tests.swift */; };
 		3F9382782ABB32CC00612F8D /* HW2CIS357UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9382772ABB32CC00612F8D /* HW2CIS357UITests.swift */; };
 		3F93827A2ABB32CC00612F8D /* HW2CIS357UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9382792ABB32CC00612F8D /* HW2CIS357UITestsLaunchTests.swift */; };
+		8EFC8E442AC3A2AA00A32CED /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFC8E432AC3A2AA00A32CED /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3F9382732ABB32CC00612F8D /* HW2CIS357UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW2CIS357UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9382772ABB32CC00612F8D /* HW2CIS357UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW2CIS357UITests.swift; sourceTree = "<group>"; };
 		3F9382792ABB32CC00612F8D /* HW2CIS357UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW2CIS357UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8EFC8E432AC3A2AA00A32CED /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				3F9382582ABB32C600612F8D /* SceneDelegate.swift */,
 				3F93825A2ABB32C600612F8D /* ViewController.swift */,
 				3F93825C2ABB32C600612F8D /* Main.storyboard */,
+				8EFC8E432AC3A2AA00A32CED /* SettingsViewController.swift */,
 				3F93825F2ABB32CB00612F8D /* Assets.xcassets */,
 				3F9382612ABB32CB00612F8D /* LaunchScreen.storyboard */,
 				3F9382642ABB32CB00612F8D /* Info.plist */,
@@ -261,6 +264,7 @@
 				3F93825B2ABB32C600612F8D /* ViewController.swift in Sources */,
 				3F9382572ABB32C600612F8D /* AppDelegate.swift in Sources */,
 				3F9382592ABB32C600612F8D /* SceneDelegate.swift in Sources */,
+				8EFC8E442AC3A2AA00A32CED /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
