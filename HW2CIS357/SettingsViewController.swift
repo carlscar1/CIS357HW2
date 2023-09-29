@@ -7,12 +7,34 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+protocol SettingsViewControllerDelegate {
+    func indicateSelection(distanceUnits: String)
+}
 
+class SettingsViewController: UIViewController {
+    var pickerData: [String] = [String]()
+    var selection : String = "Miles"
+    var delegate : SettingsViewControllerDelegate?
+
+    @IBOutlet weak var picker: UIPickerView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.pickerData = ["Kilometers", "Miles"]
+        self.picker.delegate = self
+        self.picker.dataSource = self
+        if let index = pickerData.firstIndex(of: self.selection) {
+            self.picker.selectRow(index, inComponent:0, animated:true) } else {
+                self.picker.selectRow(0, inComponent: 0, animated: true)
+            }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if let d = self.delegate {
+            d.indicateSelection(distanceUnits: <#T##String#>)
+        }
     }
     
     @IBAction func Cancel(_ sender: Any) {
@@ -29,4 +51,22 @@ class SettingsViewController: UIViewController {
     }
     */
 
+}
+
+extension SettingsViewController : UIPickerViewDataSource, UIPickerViewDelegate {
+    func numberOfComponents(in: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return self.pickerData[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        self.selection = self.pickerData[row]
+    }
 }

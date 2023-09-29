@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SettingsViewControllerDelegate {
 
     @IBOutlet weak var p1LatInputField: UITextField!
     @IBOutlet weak var p2LatInputField: UITextField!
@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     var p2Lat: String = ""
     var p1Long: String = ""
     var p2Long: String = ""
+    var distMeasurement: String = ""
+    var distanceUnits = "Miles"
     
     
     override func viewDidLoad() {
@@ -27,6 +29,20 @@ class ViewController: UIViewController {
         p2LatInputField.text = p2Lat
         p1LongInputField.text = p1Long
         p2LongInputField.text = p2Long
+    }
+    
+    func indicateSelection(distanceUnits: String) {
+        self.distanceUnits = distanceUnits
+        self.distMeasurement = "Units: \(distanceUnits)"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToSettings" {
+            if let dest = segue.destination as? SettingsViewController {
+                dest.delegate = self
+                dest.selection = self.distanceUnits
+            }
+        }
     }
 
 
