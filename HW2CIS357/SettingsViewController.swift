@@ -33,7 +33,7 @@ class SettingsViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         if let d = self.delegate {
-            d.indicateSelection(distanceUnits: <#T##String#>)
+            d.indicateSelection(distanceUnits: "")
         }
     }
     
