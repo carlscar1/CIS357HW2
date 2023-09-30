@@ -29,7 +29,13 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
         p2LatInputField.text = p2Lat
         p1LongInputField.text = p1Long
         p2LongInputField.text = p2Long
+    
+        
     }
+    open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+            self.view.endEditing(true)
+        }
+    
     
     func indicateSelection(distanceUnits: String) {
         self.distanceUnits = distanceUnits
