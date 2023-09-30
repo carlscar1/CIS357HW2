@@ -77,11 +77,27 @@
                                     <segue destination="oS6-fK-xHj" kind="presentation" id="xX4-uu-t8b"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfw-l3-w3l">
+                                <rect key="frame" x="118" y="206" width="106" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecS-OE-xht">
+                                <rect key="frame" x="118" y="229" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="BearingValue" destination="ecS-OE-xht" id="2a6-nS-Rgn"/>
+                        <outlet property="DistanceValue" destination="zfw-l3-w3l" id="Soa-Pz-bMC"/>
                         <outlet property="p1LatInputField" destination="5q6-PF-HaC" id="hiA-Tc-2st"/>
                         <outlet property="p1LongInputField" destination="VYW-JU-e79" id="lKx-v3-Hsf"/>
                         <outlet property="p2LatInputField" destination="oQU-If-ixZ" id="6Wz-5X-vyt"/>

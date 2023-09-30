@@ -14,6 +14,9 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
     @IBOutlet weak var p1LongInputField: UITextField!
     @IBOutlet weak var p2LongInputField: UITextField!
     
+    @IBOutlet weak var DistanceValue: UILabel!
+    @IBOutlet weak var BearingValue: UILabel!
+    
     var p1Lat: String = ""
     var p2Lat: String = ""
     var p1Long: String = ""
@@ -22,13 +25,9 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
     var distanceUnits = "Miles"
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        p1LatInputField.text = p1Lat
-        p2LatInputField.text = p2Lat
-        p1LongInputField.text = p1Long
-        p2LongInputField.text = p2Long
     
         
     }
@@ -53,6 +52,11 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
 
 
     @IBAction func calculate(_ sender: UIButton) {
+        p1Lat = p1LatInputField.text!
+        p2Lat = p2LatInputField.text!
+        p1Long = p1LongInputField.text!
+        p2Long = p2LongInputField.text!
+        
         //Calulate distance:
         var distance: Float = 0.0
         var earthRadius: Float = 6371
@@ -63,12 +67,16 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
         var c = 2 * atan2(sqrt(a), sqrt(1-a))
         distance = earthRadius * c
         
+        DistanceValue.text = String(distance)
+        
         //Calculate bearing:
         var bearing: Float = 0.0
         var x = cos(degreesToRadians(deg: Float(p2Lat)!)) * sin(degreesToRadians(deg:dLong))
         var y = cos(degreesToRadians(deg: Float(p1Lat)!)) * sin(degreesToRadians(deg: Float(p2Lat)!)) - sin(degreesToRadians(deg: Float(p1Lat)!)) * cos(degreesToRadians(deg: Float(p2Lat)!)) * cos(degreesToRadians(deg: dLong))
         bearing = atan2(x,y)
         bearing = radiansToDegrees(rad: bearing)
+        
+        BearingValue.text = String(bearing)
         
     }
     
