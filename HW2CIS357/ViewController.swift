@@ -67,6 +67,7 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
         var c = 2 * atan2(sqrt(a), sqrt(1-a))
         distance = earthRadius * c
         
+        distance = round(100 * distance) / 100
         DistanceValue.text = String(distance)
         
         //Calculate bearing:
@@ -75,6 +76,7 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
         var y = cos(degreesToRadians(deg: Float(p1Lat)!)) * sin(degreesToRadians(deg: Float(p2Lat)!)) - sin(degreesToRadians(deg: Float(p1Lat)!)) * cos(degreesToRadians(deg: Float(p2Lat)!)) * cos(degreesToRadians(deg: dLong))
         bearing = atan2(x,y)
         bearing = radiansToDegrees(rad: bearing)
+        bearing = round(100 * bearing) / 100
         
         BearingValue.text = String(bearing)
         
