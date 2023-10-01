@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F15A8B82AC8ED2B00B73CC6 /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F15A8B72AC8ED2B00B73CC6 /* DecimalMinusTextField.swift */; };
 		3F9382572ABB32C600612F8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9382562ABB32C600612F8D /* AppDelegate.swift */; };
 		3F9382592ABB32C600612F8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9382582ABB32C600612F8D /* SceneDelegate.swift */; };
 		3F93825B2ABB32C600612F8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F93825A2ABB32C600612F8D /* ViewController.swift */; };
@@ -16,8 +17,6 @@
 		3F93826E2ABB32CC00612F8D /* HW2CIS357Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F93826D2ABB32CC00612F8D /* HW2CIS357Tests.swift */; };
 		3F9382782ABB32CC00612F8D /* HW2CIS357UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9382772ABB32CC00612F8D /* HW2CIS357UITests.swift */; };
 		3F93827A2ABB32CC00612F8D /* HW2CIS357UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9382792ABB32CC00612F8D /* HW2CIS357UITestsLaunchTests.swift */; };
-		8E95A02F2AC8CE97000F8CA7 /* DecimalMinusTextField in Resources */ = {isa = PBXBuildFile; fileRef = 8E95A02E2AC8CE97000F8CA7 /* DecimalMinusTextField */; };
-		8E95A04D2AC8CEC3000F8CA7 /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E95A04C2AC8CEC3000F8CA7 /* DecimalMinusTextField.swift */; };
 		8EFC8E442AC3A2AA00A32CED /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFC8E432AC3A2AA00A32CED /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,23 +35,10 @@
 			remoteGlobalIDString = 3F9382522ABB32C600612F8D;
 			remoteInfo = HW2CIS357;
 		};
-		8E95A0482AC8CEBF000F8CA7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8E95A0342AC8CEBE000F8CA7 /* DecimalMinusDemo.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9E8B53F61BB58D6B007E79E2;
-			remoteInfo = DecimalMinusDemo;
-		};
-		8E95A04A2AC8CEBF000F8CA7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8E95A0342AC8CEBE000F8CA7 /* DecimalMinusDemo.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9E8B540B1BB58D6B007E79E2;
-			remoteInfo = DecimalMinusDemoTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F15A8B72AC8ED2B00B73CC6 /* DecimalMinusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalMinusTextField.swift; sourceTree = "<group>"; };
 		3F9382532ABB32C600612F8D /* HW2CIS357.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW2CIS357.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9382562ABB32C600612F8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F9382582ABB32C600612F8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,22 +52,6 @@
 		3F9382732ABB32CC00612F8D /* HW2CIS357UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW2CIS357UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9382772ABB32CC00612F8D /* HW2CIS357UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW2CIS357UITests.swift; sourceTree = "<group>"; };
 		3F9382792ABB32CC00612F8D /* HW2CIS357UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW2CIS357UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8E95A02E2AC8CE97000F8CA7 /* DecimalMinusTextField */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DecimalMinusTextField; path = ../../DecimalMinusTextField; sourceTree = "<group>"; };
-		8E95A0312AC8CEBE000F8CA7 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		8E95A0322AC8CEBE000F8CA7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		8E95A0342AC8CEBE000F8CA7 /* DecimalMinusDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = DecimalMinusDemo.xcodeproj; sourceTree = "<group>"; };
-		8E95A0382AC8CEBE000F8CA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8E95A03A2AC8CEBE000F8CA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		8E95A03C2AC8CEBE000F8CA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8E95A03D2AC8CEBE000F8CA7 /* DecimalMinusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalMinusTextField.swift; sourceTree = "<group>"; };
-		8E95A03E2AC8CEBE000F8CA7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8E95A03F2AC8CEBE000F8CA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8E95A0402AC8CEBE000F8CA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E95A0422AC8CEBE000F8CA7 /* DecimalMinusDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalMinusDemoTests.swift; sourceTree = "<group>"; };
-		8E95A0432AC8CEBE000F8CA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E95A0442AC8CEBE000F8CA7 /* DecimalMinusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalMinusTextField.swift; sourceTree = "<group>"; };
-		8E95A0452AC8CEBE000F8CA7 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		8E95A04C2AC8CEC3000F8CA7 /* DecimalMinusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DecimalMinusTextField.swift; path = ../../DecimalMinusTextField/DecimalMinusTextField.swift; sourceTree = "<group>"; };
 		8EFC8E432AC3A2AA00A32CED /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,6 +80,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F15A8B62AC8ED2200B73CC6 /* DecimalMinusTextField */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DecimalMinusTextField;
+			sourceTree = "<group>";
+		};
 		3F93824A2ABB32C600612F8D = {
 			isa = PBXGroup;
 			children = (
@@ -136,13 +113,13 @@
 				3F9382562ABB32C600612F8D /* AppDelegate.swift */,
 				3F9382582ABB32C600612F8D /* SceneDelegate.swift */,
 				3F93825A2ABB32C600612F8D /* ViewController.swift */,
-				8E95A04C2AC8CEC3000F8CA7 /* DecimalMinusTextField.swift */,
+				3F15A8B72AC8ED2B00B73CC6 /* DecimalMinusTextField.swift */,
+				3F15A8B62AC8ED2200B73CC6 /* DecimalMinusTextField */,
 				3F93825C2ABB32C600612F8D /* Main.storyboard */,
 				8EFC8E432AC3A2AA00A32CED /* SettingsViewController.swift */,
 				3F93825F2ABB32CB00612F8D /* Assets.xcassets */,
 				3F9382612ABB32CB00612F8D /* LaunchScreen.storyboard */,
 				3F9382642ABB32CB00612F8D /* Info.plist */,
-				8E95A0302AC8CEBE000F8CA7 /* DecimalMinusTextField */,
 			);
 			path = HW2CIS357;
 			sourceTree = "<group>";
@@ -160,64 +137,8 @@
 			children = (
 				3F9382772ABB32CC00612F8D /* HW2CIS357UITests.swift */,
 				3F9382792ABB32CC00612F8D /* HW2CIS357UITestsLaunchTests.swift */,
-				8E95A02E2AC8CE97000F8CA7 /* DecimalMinusTextField */,
 			);
 			path = HW2CIS357UITests;
-			sourceTree = "<group>";
-		};
-		8E95A0302AC8CEBE000F8CA7 /* DecimalMinusTextField */ = {
-			isa = PBXGroup;
-			children = (
-				8E95A0312AC8CEBE000F8CA7 /* LICENSE */,
-				8E95A0322AC8CEBE000F8CA7 /* README.md */,
-				8E95A0332AC8CEBE000F8CA7 /* DecimalMinusDemo */,
-				8E95A0442AC8CEBE000F8CA7 /* DecimalMinusTextField.swift */,
-				8E95A0452AC8CEBE000F8CA7 /* .gitignore */,
-			);
-			name = DecimalMinusTextField;
-			path = ../../DecimalMinusTextField;
-			sourceTree = "<group>";
-		};
-		8E95A0332AC8CEBE000F8CA7 /* DecimalMinusDemo */ = {
-			isa = PBXGroup;
-			children = (
-				8E95A0342AC8CEBE000F8CA7 /* DecimalMinusDemo.xcodeproj */,
-				8E95A0372AC8CEBE000F8CA7 /* DecimalMinusDemo */,
-				8E95A0412AC8CEBE000F8CA7 /* DecimalMinusDemoTests */,
-			);
-			path = DecimalMinusDemo;
-			sourceTree = "<group>";
-		};
-		8E95A0352AC8CEBE000F8CA7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8E95A0492AC8CEBF000F8CA7 /* DecimalMinusDemo.app */,
-				8E95A04B2AC8CEBF000F8CA7 /* DecimalMinusDemoTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		8E95A0372AC8CEBE000F8CA7 /* DecimalMinusDemo */ = {
-			isa = PBXGroup;
-			children = (
-				8E95A0382AC8CEBE000F8CA7 /* ViewController.swift */,
-				8E95A0392AC8CEBE000F8CA7 /* LaunchScreen.xib */,
-				8E95A03B2AC8CEBE000F8CA7 /* Main.storyboard */,
-				8E95A03D2AC8CEBE000F8CA7 /* DecimalMinusTextField.swift */,
-				8E95A03E2AC8CEBE000F8CA7 /* Images.xcassets */,
-				8E95A03F2AC8CEBE000F8CA7 /* AppDelegate.swift */,
-				8E95A0402AC8CEBE000F8CA7 /* Info.plist */,
-			);
-			path = DecimalMinusDemo;
-			sourceTree = "<group>";
-		};
-		8E95A0412AC8CEBE000F8CA7 /* DecimalMinusDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				8E95A0422AC8CEBE000F8CA7 /* DecimalMinusDemoTests.swift */,
-				8E95A0432AC8CEBE000F8CA7 /* Info.plist */,
-			);
-			path = DecimalMinusDemoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,12 +231,6 @@
 			mainGroup = 3F93824A2ABB32C600612F8D;
 			productRefGroup = 3F9382542ABB32C600612F8D /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 8E95A0352AC8CEBE000F8CA7 /* Products */;
-					ProjectRef = 8E95A0342AC8CEBE000F8CA7 /* DecimalMinusDemo.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				3F9382522ABB32C600612F8D /* HW2CIS357 */,
@@ -325,30 +240,12 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		8E95A0492AC8CEBF000F8CA7 /* DecimalMinusDemo.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = DecimalMinusDemo.app;
-			remoteRef = 8E95A0482AC8CEBF000F8CA7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8E95A04B2AC8CEBF000F8CA7 /* DecimalMinusDemoTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = DecimalMinusDemoTests.xctest;
-			remoteRef = 8E95A04A2AC8CEBF000F8CA7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		3F9382512ABB32C600612F8D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3F9382632ABB32CB00612F8D /* LaunchScreen.storyboard in Resources */,
-				8E95A02F2AC8CE97000F8CA7 /* DecimalMinusTextField in Resources */,
 				3F9382602ABB32CB00612F8D /* Assets.xcassets in Resources */,
 				3F93825E2ABB32C600612F8D /* Main.storyboard in Resources */,
 			);
@@ -378,7 +275,7 @@
 				3F93825B2ABB32C600612F8D /* ViewController.swift in Sources */,
 				3F9382572ABB32C600612F8D /* AppDelegate.swift in Sources */,
 				3F9382592ABB32C600612F8D /* SceneDelegate.swift in Sources */,
-				8E95A04D2AC8CEC3000F8CA7 /* DecimalMinusTextField.swift in Sources */,
+				3F15A8B82AC8ED2B00B73CC6 /* DecimalMinusTextField.swift in Sources */,
 				8EFC8E442AC3A2AA00A32CED /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,22 +327,6 @@
 				3F9382622ABB32CB00612F8D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		8E95A0392AC8CEBE000F8CA7 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8E95A03A2AC8CEBE000F8CA7 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		8E95A03B2AC8CEBE000F8CA7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8E95A03C2AC8CEBE000F8CA7 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

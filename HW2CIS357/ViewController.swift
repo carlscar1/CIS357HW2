@@ -23,6 +23,8 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
     var p2Long: String = ""
     var distMeasurement: String = ""
     var distanceUnits = "Miles"
+    var bearingMeasurement: String = ""
+    var bearingUnits = "Degrees"
     
     
     
@@ -39,6 +41,13 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
     func indicateSelection(distanceUnits: String) {
         self.distanceUnits = distanceUnits
         self.distMeasurement = "Units: \(distanceUnits)"
+        print("Units: \(distanceUnits)")
+    }
+    
+    func indicateBearingSelection(bearingUnits: String) {
+        self.bearingUnits = bearingUnits
+        self.bearingMeasurement = "Units: \(bearingUnits)"
+        print("Units: \(bearingUnits)")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -68,7 +77,14 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
         distance = earthRadius * c
         
         distance = round(100 * distance) / 100
-        DistanceValue.text = String(distance)
+        
+        //based on units
+        if (distanceUnits == "Kilometers") {
+            distance = milesToKm(distanceUnit: distance)
+            DistanceValue.text = String(distance) + (" kilometers")
+        } else {
+            DistanceValue.text = String(distance) + (" miles")
+        }
         
         //Calculate bearing:
         var bearing: Float = 0.0
@@ -78,7 +94,13 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
         bearing = radiansToDegrees(rad: bearing)
         bearing = round(100 * bearing) / 100
         
-        BearingValue.text = String(bearing)
+        //based on units
+        if (bearingUnits == "Mils") {
+            bearing = kmToMiles(distanceUnit: bearing)
+            BearingValue.text = String(bearing) + (" mils")
+        } else {
+            BearingValue.text = String(bearing) + (" degrees")
+        }
         
     }
     
@@ -88,6 +110,22 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
     
     func radiansToDegrees(rad: Float) -> Float{
         return rad * 180 / Float.pi
+    }
+    
+    func milesToKm(distanceUnit: Float) -> Float{
+        return distanceUnit * 1.609
+    }
+    
+    func kmToMiles(distanceUnit: Float) -> Float{
+        return distanceUnit / 1.609
+    }
+    
+    func degToMils(bearingUnit: Float) -> Float{
+        return bearingUnit * 17.7777777778
+    }
+    
+    func milsToDeg(bearingUnit: Float) -> Float{
+        return bearingUnit / 17.777777777778
     }
     
     
