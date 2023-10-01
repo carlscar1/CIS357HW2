@@ -74,7 +74,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Settings"/>
                                 <connections>
                                     <action selector="goToSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ob0-E2-imp"/>
-                                    <segue destination="oS6-fK-xHj" kind="presentation" id="xX4-uu-t8b"/>
+                                    <segue destination="oS6-fK-xHj" kind="presentation" identifier="goToSettings" id="xX4-uu-t8b"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfw-l3-w3l">
@@ -129,6 +129,7 @@
                                         <barButtonItem key="rightBarButtonItem" title="Save" id="0s9-vF-44d">
                                             <connections>
                                                 <action selector="onSaveButtonPress:" destination="oS6-fK-xHj" id="qZo-LM-D8P"/>
+                                                <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="Lj0-Sm-xZe"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>

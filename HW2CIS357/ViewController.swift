@@ -30,8 +30,6 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        
     }
     open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             self.view.endEditing(true)
@@ -79,6 +77,8 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
         distance = round(100 * distance) / 100
         
         //based on units
+        indicateSelection(distanceUnits: distanceUnits)
+        print("TestUnits: \(distanceUnits)")
         if (distanceUnits == "Kilometers") {
             distance = milesToKm(distanceUnit: distance)
             DistanceValue.text = String(distance) + (" kilometers")
@@ -95,6 +95,8 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
         bearing = round(100 * bearing) / 100
         
         //based on units
+        indicateBearingSelection(bearingUnits: bearingUnits)
+        print("TestUnits: \(bearingUnits)")
         if (bearingUnits == "Mils") {
             bearing = kmToMiles(distanceUnit: bearing)
             BearingValue.text = String(bearing) + (" mils")
@@ -128,10 +130,7 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
         return bearingUnit / 17.777777777778
     }
     
-    
     @IBAction func goToSettings(_ sender: UIButton) {
-        
-        
         
     }
     
